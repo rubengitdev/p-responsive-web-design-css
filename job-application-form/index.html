@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Job Application Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Job Application Form</h1>
+            <form>
+                <!-- Full Name Field -->
+                <label for="name">Full Name:</label>
+                <input
+                    id="name"
+                    name="full-name"
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                />
+
+                <!-- Email field -->
+                <label for="email">Email:</label>
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                />
+
+                <label for="position">Position:</label>
+                <select id="position" name="position" required>
+                    <option value>Select a position</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="manager">Manager</option>
+                </select>
+
+                <fieldset class="radio-group">
+                    <legend>Availability</legend>
+
+                    <input
+                        id="fulltime"
+                        type="radio"
+                        name="availability"
+                        checked
+                    />
+                    <label for="fulltime">Full-Time</label>
+
+                    <input id="parttime" type="radio" name="availability" />
+                    <label for="parttime">Part-Time</label>
+                </fieldset>
+
+                <label for="message">Why do you want this job?</label>
+                <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Write your motivation"
+                    rows="5"
+                ></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Parent Teacher Conference Form</title>
+    </head>
+    <body>
+        <main class="container">
+            <h1 class="title center">Parent Teacher Conference Form</h1>
+            <p class="description center">
+                Please fill out the form below to help schedule your
+                parent-teacher conference.
+            </p>
+            <form action="">
+                <fieldset>
+                    <legend>Student Information</legend>
+
+                    <label for="student-name">Full Name: </label>
+                    <input
+                        id="student-name"
+                        name="student-name"
+                        type="text"
+                        placeholder="E.g., Jane Doe"
+                        required
+                    />
+
+                    <label for="grade">Student Grade: </label>
+                    <input
+                        id="grade"
+                        name="grade"
+                        type="number"
+                        placeholder="E.g., 4"
+                        required
+                    />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Parent/Guardian Information</legend>
+
+                    <label for="parent-name">Parent/Guardian Name: </label>
+                    <input
+                        id="parent-name"
+                        name="parent-name"
+                        type="text"
+                        placeholder="E.g., Nancy Doe"
+                        required
+                    />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+                    <label for="email" class="contact-method">Email: </label>
+                    <input
+                        id="email"
+                        class="contact-method-radio-btn"
+                        name="contact-method"
+                        type="radio"
+                        value="email"
+                        checked
+                    />
+
+                    <label for="phone" class="contact-method">Phone: </label>
+                    <input
+                        id="phone"
+                        class="contact-method-radio-btn"
+                        name="contact-method"
+                        type="radio"
+                        value="phone"
+                    />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Notes</legend>
+                    <label for="notes"
+                        >Any specific concerns or topics you'd like to
+                        discuss?</label
+                    >
+                    <textarea
+                        name="notes"
+                        id="notes"
+                        rows="4"
+                        cols="50"
+                    ></textarea>
+                </fieldset>
+
+                <button class="submit-btn" type="submit">Submit Form</button>
+            </form>
+        </main>
+    </body>
+</html>

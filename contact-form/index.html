@@ -5,5 +5,36 @@
         <link rel="stylesheet" href="styles.css" />
         <title>Contact Form</title>
     </head>
-    <body></body>
+    <body>
+        <div class="form-container">
+            <form>
+                <!-- Form Title -->
+                <h2>Contact Us</h2>
+
+                <!-- Name field -->
+                <label for="name"
+                    >Name:
+                    <input id="name" name="form-field" type="text" required
+                /></label>
+
+                <!-- Email field -->
+                <label for="email"
+                    >Email:
+                    <input id="email" name="form-field" type="email" required
+                /></label>
+
+                <!-- Message Text Area -->
+                <label for="message"
+                    >Message:
+                    <textarea
+                        id="message"
+                        name="form-field"
+                        required
+                    ></textarea>
+                </label>
+
+                <input type="text" value="Submit" />
+            </form>
+        </div>
+    </body>
 </html>
